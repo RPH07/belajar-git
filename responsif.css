@@ -1,0 +1,147 @@
+/* Bagian responsif */
+/* Akan di eksekusi kalau menyentuh layar maksimal di 768px*/
+@media (max-width: 768px) {
+    header h1 {
+    font-size: 14px;
+    }
+
+    ul {
+    position: static;
+    left: 0;
+    display: flex;
+    margin-left: -50px;
+    font-size: 12px;
+    }
+    
+    .hero {
+    height: 300px;  
+    }
+
+    .hero h1 {
+    font-size: 18px;
+    }
+
+    .hero p {
+    font-size: 12px;
+    }
+
+    .hero button {
+    font-size: 10px;
+    }
+
+    .about{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 22px;
+    }
+
+    .img-about{
+        width: 100%;
+        margin-left: 70px;
+    }
+    
+    .about-text h1{
+        font-size: 14px;    
+        white-space: wrap;
+    }
+
+    .about-text p{
+        font-size: 12px;
+    }
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kontak-dua,
+    .kontak-form,
+    .dukungan {
+        max-width: 100%;
+    }
+
+    .kontak-form input,
+    .kontak-form textarea {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+/* margin-top: 10px; */
+    .copyright{
+        font-size: 12px;
+        margin: 10px 0 15px 0;
+    } 
+    .produk{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .testimoni-pengguna{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .judul-testimoni{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 1025px) and (min-width: 801px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kontak-dua,
+    .kontak-form,
+    .dukungan {
+        max-width: 100%;
+    }
+
+    .kontak-form input,
+    .kontak-form textarea {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
+}
+
+
+/* Akan di eksekusi kalau menyentuh layar maksimal di 900px*/
+@media only screen and (min-width: 801px) {
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .about-text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .img-about img {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    .produk{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+}
