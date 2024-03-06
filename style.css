@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFCF2; 
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+h1{
+    font-size: 22px;
+}
+
+ul{
+    display: flex;
+    position: relative;
+    left: 5px;
+    font-size: 18px;
+}
+
+li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-list li:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    filter: blur(3px) brightness(0.5);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover{
+    transition: 0.5s;
+    box-shadow: 10px 10px 20px -12px rgba(0,0,0,0.75) inset;
+}
+
+.about{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 30px;
+}
+
+.about-text p {
+    text-indent: 20px;
+}
+
+
+.about-text h1 {
+    text-align: center;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.img-about img{
+    width: 100%;
+    margin-left: -10px;
+    border-radius: 30px;
+}
+
+/* Konten produk */
+
+.smartphone-unggulan{   
+    background-color: #EAF4F4;
+}
+
+.judul-product h1{
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.produk-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+.produk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 23px;
+  }
+  .produk-item {
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+  }
+  .produk-item img {
+    width: 100%;
+    height: 250px;
+  }
+  .produk-item .nama {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .produk-item .harga {
+    margin-bottom: 10px;
+  }
+  .produk-item .detail,
+  .produk-item .beli {
+    background-color:#F0EAD2;
+    padding: 5px;
+    color: rgb(56, 60, 63);
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  .produk-item .detail:hover,
+  .produk-item .beli:hover, .produk-lainnya:hover {
+    box-shadow: 10px 10px 20px -12px rgba(0,0,0,0.75) inset;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+
+
+button{
+    border: none;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.beli{
+    width: 100px;
+    height: 30px;
+    position: relative;
+    top: 2px;
+    right: -30px;
+}
+
+.detail{
+    width: 60px;
+    height: 25px;
+    position: relative;
+    top: 33px;
+    left: -55px;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
+    background-color: white;
+    border-radius: 20px;
+    height: 450px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 26px -5px rgba(0,0,0,0.27);
+}
+
+.card2{
+    height: 480px;
+}
+
+button.produk-lainnya {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    border: none;
+    background-color: bisque;
+    padding: 5px;
+    color: rgb(56, 60, 63);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.produk-lainnya {
+    margin: 0 auto;
+}
+
+
+/* Konten Testimoni */
+
+.testimoni{
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+}
+
+.testimoni img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.testimoni-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimoni-pengguna{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 23px;
+}
+
+.card10, .card11, .card12, .card13{
+    background-color: white;
+    border-radius: 20px;
+    height: 50%;
+    margin-top: 30px;
+    box-shadow: 10px 10px 26px -5px rgba(0,0,0,0.27);
+}
+
+.review-pengguna h1{
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Konten form dan dukungan */
+.form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 30px;
+    background-color: #EAF4F4;
+}
+
+.kontak-dua, .dukungan {
+    max-width: 400px;
+}
+
+.kontak-form {
+    max-width: 400px;
+}
+
+.kontak-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.kontak-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kontak-form button:hover {
+    background-color: #0056b3;
+}
+
+.dukungan ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.dukungan li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+
+/* Konten Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+footer a{
+    color: black;
+}
+
+.copyright{
+    font-size: 22px;
+}
+
+.social-media{
+    font-size: 22px;
+}
+
+/* Bagian responsif */
+/* Akan di eksekusi kalau menyentuh layar maksimal di 768px*/
+@media (max-width: 768px) {
+    header h1 {
+    font-size: 14px;
+    }
+
+    ul {
+    position: static;
+    left: 0;
+    display: flex;
+    margin-left: -50px;
+    font-size: 12px;
+    }
+    
+    .hero {
+    height: 300px;  
+    }
+
+    .hero h1 {
+    font-size: 18px;
+    }
+
+    .hero p {
+    font-size: 12px;
+    }
+
+    .hero button {
+    font-size: 10px;
+    }
+
+    .about{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 22px;
+    }
+
+    .img-about{
+        width: 100%;
+        margin-left: 70px;
+    }
+    
+    .about-text h1{
+        font-size: 14px;    
+        white-space: wrap;
+    }
+
+    .about-text p{
+        font-size: 12px;
+    }
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kontak-dua,
+    .kontak-form,
+    .dukungan {
+        max-width: 100%;
+    }
+
+    .kontak-form input,
+    .kontak-form textarea {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+/* margin-top: 10px; */
+    .copyright{
+        font-size: 12px;
+        margin: 10px 0 15px 0;
+    } 
+    .produk{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .testimoni-pengguna{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .judul-testimoni{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 1025px) and (min-width: 801px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kontak-dua,
+    .kontak-form,
+    .dukungan {
+        max-width: 100%;
+    }
+
+    .kontak-form input,
+    .kontak-form textarea {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
+}
+
+
+/* Akan di eksekusi kalau menyentuh layar maksimal di 900px*/
+@media only screen and (min-width: 801px) {
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .about-text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .img-about img {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    .produk{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+}
